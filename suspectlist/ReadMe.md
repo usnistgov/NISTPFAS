@@ -1,6 +1,6 @@
 # Per- and polyfluoroalkyl substances suspect list
 
-To access the most up-to-date version go to [https://data.nist.gov/od/id/mds2-2387](https://data.nist.gov/od/id/mds2-2387) and download the file called 'PFAS Suspect List_vX.xlsx' (where X is the most recent version)
+To access the most up-to-date version go to [https://data.nist.gov/XXXX](https://data.nist.gov/XXXX) and download the file called 'PFAS Suspect List_vX.xlsx' (where X is the most recent version)
 
 ## Use of list
 
@@ -28,8 +28,9 @@ For each compound listed, the following properties are provided:
 | PUBCHEMID  | PubChem ID for the InChI Key structure, multiple IDs are separated by semi-colons (;) |
 | INSPECTEDBY | The initials of the user that manually evaluated the structure and the associated data, NA indicates that the structure has not been manually evaluated |
 
-## Format of input file
-Input files must be Microsoft Excel (*.xlsx) format with the minimum headers in the first row (case sensitive): NAME, INCHI, SOURCE, SOURCE_TYPE
+## To add new compounds
+
+To add new compounds to the suspect list, you can supply an input file via email. Input files must be Microsoft Excel (*.xlsx) format with the minimum headers in the first row (case sensitive): NAME, INCHI, SOURCE, SOURCE_TYPE
 These headers are defined as:
 
 _NAME_ - Name of the compound
@@ -46,6 +47,19 @@ Blank values for any additional headers are accepted, empty cells for NAME, INCH
 An example file for providing new compounds is included in this directory as a file named "example_input.xlsx"
 
 Currently, input files can be emailed to pfas@nist.gov. You will receive a verification email once the data is loaded onto the suspect list, you may be requested to provide review of flagged entries.
+
+## To update compound information
+
+To update a compound in the suspect list, notably additional information, you must supply an update file via email. Update vials must be Microsoft Excel (*.xlsx) format with, at minimum, all headers from the Suspect List: ID, NAME, INCHI, SOURCE, SOURCE_TYPE, ADDITIONAL, SMILES, INCHIKEY, LOCAL_POS, LOCAL_NEG, FORMULA, FIXEDMASS, NETCHARGE, DTXSID, DTXCID, CASRN, PUBCHEMID, INSPECTEDBY
+
+Additional headers will be combined to the current "ADDITIONAL" Column for easier searching. Changes to specific ADDITIONAL values can be made within the ADDITIONAL column.
+Blank values for any additional headers are accepted, empty cells for NAME, INCHI, SOURCE, SOURCE_TYPE will lead to an error.
+
+No automatic updates can be made to compound structures, they must be manually inspected prior to update. Therefore, changes to the compound structure may take longer to update.
+
+An example file for providing updates to current compounds is included in this directory as a file named "example_update.xlsx"
+
+Currently, update files can be emailed to pfas@nist.gov. You will receive a verification email once the data is loaded onto the suspect list, you may be requested to provide review of flagged entries.
 
 ## Additional information
 
