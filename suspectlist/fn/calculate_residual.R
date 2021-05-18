@@ -49,7 +49,7 @@ calculate_monoisotope <- function(elementlist, exactmasses, adduct = "neutral") 
 
 collapse_ecomp <- function(ecomp) {
   if (length(ecomp$elements) == 0) {return(NA)}
-  paste(sapply(1:length(ecomp$elements), function(x) paste(ecomp$elements[x], ecomp$counts[x], sep = "")), collapse = "")
+  paste(sapply(1:length(ecomp$elements), function(x) {if (ecomp$counts[x] > 0) {o <- paste(ecomp$elements[x], ecomp$counts[x], sep = "")}; if (ecomp$counts[x] <= 0) {o <- ""}; o}), collapse = "")
 }
 
 calculate_residual <- function(ecomp, rep_unit = "CF2", exactmasses, adduct = "neutral") {
