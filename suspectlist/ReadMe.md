@@ -1,6 +1,6 @@
 # Per- and polyfluoroalkyl substances suspect list
 
-To access the most up-to-date version go to [https://data.nist.gov/od/id/mds2-2387](https://data.nist.gov/od/id/mds2-2387) and download the file called 'PFAS Suspect List_v1.xlsx'
+To access the most up-to-date version go to [https://data.nist.gov/od/id/mds2-2387](https://data.nist.gov/od/id/mds2-2387) and download the file called 'PFAS Suspect List_v1_2.xlsx'
 
 ## Use of list
 
