@@ -1,0 +1,83 @@
+{
+"sample": {
+"name": "tobecompleted.mzML",
+"description": "needs value",
+"sample_class": "other",
+"data_generator": "needs value",
+"source": ""
+},
+"chromatography": {
+"ctype": "Liquid Chromatography",
+"cvendor": "Waters Corporation",
+"cmodel": "needs value",
+"ssolvent": "methanol",
+"mp1solvent": "water",
+"mp1add": "ammonium acetate",
+"m2solvent": "acetonitrile",
+"mp2add": "none",
+"mp3solvent": "none",
+"mp3add": "none",
+"mp4solvent": "none",
+"mp4add": "none",
+"gcolvendor": "Phenomenex",
+"gcolname": "Kinetex Evo C18",
+"gcolchemistry": "octadecyl (C18)",
+"gcolid": "2.1",
+"gcollen": "2",
+"gcoldp": "2",
+"colvendor": "Waters Corporation",
+"colname": "Acquity UPLC BEH",
+"colchemistry": "octadecyl (C18)",
+"colid": "2.1",
+"collen": "50",
+"coldp": "1.7",
+"source": "EPA Method 1633"
+},
+"massspectrometry": {
+"msvendor": "Waters Corporation",
+"msmodel": "needs value",
+"ionization": "electrospray ionization (ESI)",
+"polarity": "negative",
+"voltage": "0.7",
+"vunits": "kV",
+"massanalyzer1": "quadrupole",
+"massanalyzer2": "time-of-flight",
+"fragmode": "CID",
+"ce_value": "0",
+"ce_desc": "fixed",
+"ce_units": "V",
+"ms2exp": "data-dependent acquisition (DDA/TopN)",
+"isowidth": "0.5",
+"msaccuracy": "10",
+"ms1resolution": "20000",
+"ms2resolution": "20000",
+"source": "EPA Method 1633 (needs modification)"
+},
+"qcmethod": [
+{
+"name": "QC Method Used",
+"value": false,
+"source": ""
+},
+{
+"name": "Mass Analyzer Calibration",
+"value": false,
+"source": ""
+},
+{
+"name": "External Standard Verification",
+"value": false,
+"source": ""
+},
+{
+"name": "Internal Standard Verification",
+"value": false,
+"source": ""
+},
+{
+"name": "Matrix Standard Verification",
+"value": false,
+"source": ""
+}
+]
+}
