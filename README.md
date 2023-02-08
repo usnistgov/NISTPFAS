@@ -2,7 +2,7 @@
 
 ## About
 
-This repository is a collection of data, source code, and other tools related to projects within the National Institute of Standards & Technology (NIST) PFAS program. All information in this repository are in development, see the [License](license.md) file for additional information regarding the usage of the data in this repository.
+This repository is a collection of data, source code, and other tools related to projects within the National Institute of Standards & Technology (NIST) PFAS program. All information in this repository are in development, see the [License](License.md) file for additional information regarding the usage of the data in this repository.
 
 The current projects within this repository include:
 + [NIST List of Possible Per- and Polyfluoroalkyl Substances](suspectlist): The NIST List of Possible PFAS is a table containing user-submitted structures for possible PFAS, which can be used for suspect screening and other non-targeted analysis approaches. In addition, source code for functions related to analysis and filtering of the NIST List of Possible PFAS are provided within this directory.
