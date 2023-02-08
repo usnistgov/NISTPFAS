@@ -12,7 +12,7 @@ When submitting NTA data, the method JSON affiliated with the raw data file can 
 
 ## Example data
 
-Examples of the exported JSON format, which can be subsequently imported into a new NTA-MRT is available within the [example] directory.
+Examples of the exported JSON format, which can be subsequently imported into a new NTA-MRT is available within the [example](example) directory.
 
 ## NIST Disclaimer
 
