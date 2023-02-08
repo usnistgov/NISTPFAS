@@ -1,10 +1,10 @@
-# Per- and polyfluoroalkyl substances suspect list
+# NIST List of Possible Per- and Polyfluoroalkyl Substances (PFAS)
 
 To access the most up-to-date version go to [https://data.nist.gov/od/id/mds2-2387](https://data.nist.gov/od/id/mds2-2387) and download the file called 'PFAS Suspect List.xlsx'
 
-## Use of list
+## Use of NIST List of Possible PFAS
 
-The list is intended to be used to screen high-resolution mass spectrometry data for possible known per- and polyfluoroalkyl substances (PFAS).
+The list is intended to be used to enable screening high-resolution mass spectrometry data for possible known per- and polyfluoroalkyl substances (PFAS). This list meant to supplement current non-targeted analysis and suspect screening analysis workflows, it does not have a function alone.
 
 For each compound listed, the following properties are provided:
 
@@ -30,7 +30,11 @@ For each compound listed, the following properties are provided:
 | INSPECTEDBY | The initials of the user that manually evaluated the structure and the associated data, NA indicates that the structure has not been manually evaluated |
 
 ## Format of input file
-Input files must be Microsoft Excel (*.xlsx) format with the minimum headers in the first row (case sensitive): NAME, INCHI, SOURCE, SOURCE_TYPE
+
+Input files must be Microsoft Excel (.xlsx) format with the minimum headers in the first row (case sensitive): NAME, INCHI, SOURCE, SOURCE_TYPE
+
+A blank input form is available as [pfas_inputform.xlsx](pfas_inputform.xlsx), additional columns can be added if needed. Examples of complete input forms are in the [example](example) directory.
+
 These headers are defined as:
 
 _NAME_ - Name of the compound
@@ -39,16 +43,15 @@ _INCHI_ - InChI structural notation of the compound
 
 _SOURCE_ - Specific citation for the compound, DOI or website is preferred (do not use "Author et al."-type citations). More than one can be separated by a semi-colon (;)
 
-_SOURCE_TYPE_ - type of citation listed above, see "Additional Information" for more
+_SOURCE_TYPE_ - type of citation listed above, see *Additional Information* for more
 
-Additional headers will be lumped into an "ADDITIONAL" Column for easier searching.
 Blank values for any additional headers are accepted, empty cells for NAME, INCHI, SOURCE, SOURCE_TYPE will lead to an error.
 
 An example file for providing new compounds is included in this directory as a file named "example_input.xlsx"
 
-Currently, input files can be emailed to pfas@nist.gov. You will receive a verification email once the data is loaded onto the suspect list, you may be requested to provide review of flagged entries.
+Currently, input files can be emailed to pfas at nist.gov. You will receive a verification email once the data is loaded onto the suspect list, you may be requested to provide review of flagged entries.
 
-## Additional information
+## Additional information in the list
 
 **Source Types:**
 
@@ -61,6 +64,9 @@ Currently, input files can be emailed to pfas@nist.gov. You will receive a verif
 | D |	Documented |	Structure has been reported in documentation (e.g., patent, safety data sheet), but has not been observed empirically. |
 | L | Limited | Limited information to support structure, only a formula exists |
 
+## Using the R scripts for downloading and analysis of the list
+
+In addition, there are R scripts available for further processing of the NIST List of Possible PFAS in the [fn](fn) directory. For the use of these scripts, there is a [User Guide](doc/PFAS_suspectlist_guide.pdf) available.
 
 ## NIST Disclaimer
 
