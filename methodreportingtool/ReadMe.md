@@ -4,7 +4,7 @@
 
 The Non-Targeted Analysis Method Reporting Tool (NTA-MRT) is a macro-enabled Microsoft Excel workbook that allows for the controlled ontology of method data reporting and the export of the data into a single concise, human-readable file, written in a standard JavaScript Object Notation (JSON).
 
-A guide for the use of the NTA-MRT is located at [doc/mrt_userguide.pdf].
+A guide for the use of the NTA-MRT is located in the [doc](doc/) directory.
 
 When submitting NTA data, the method JSON affiliated with the raw data file can be submitted in pair to provide adequate information for use of the NTA data, specifically for the generation of reference mass spectra.
 
